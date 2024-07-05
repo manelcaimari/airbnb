@@ -13,11 +13,11 @@ module.exports = function (sequelize, DataTypes) {
         },
         hostSince: {
           type: DataTypes.DATEONLY,
-          allowNull: false
+          allowNull: true
         },
         hostName: {
           type: DataTypes.STRING,
-          allowNull: false
+          allowNull: true
         },
         hostLocation: {
           type: DataTypes.STRING,
@@ -25,10 +25,10 @@ module.exports = function (sequelize, DataTypes) {
         },
         neighburhood: {
           type: DataTypes.STRING,
-          allowNull: false
+          allowNull: true
         },      
         roomType: {
-          type: DataTypes.TEXT,
+          type: DataTypes.STRING,
           allowNull: true
         },      
         bedrooms: {

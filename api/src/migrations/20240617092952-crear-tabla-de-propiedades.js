@@ -12,15 +12,15 @@ module.exports = {
       },
       hostId: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
       },
       hostSince: {
         type: Sequelize.DATEONLY,
-        allowNull: false
+        allowNull: true
       },
       hostName: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
       },
       hostLocation: {
         type: Sequelize.STRING,
@@ -28,10 +28,10 @@ module.exports = {
       },
       neighburhood: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
       },      
       roomType: {
-        type: Sequelize.TEXT,
+        type: Sequelize.STRING,
         allowNull: true
       },      
       bedrooms: {
